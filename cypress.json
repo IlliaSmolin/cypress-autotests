@@ -1,1 +1,7 @@
-{}
+{
+  "baseUrl": "https://the-internet.herokuapp.com/",
+  "integrationFolder": "tests",
+  "testFiles": "*.test.js",
+  "viewportHeight": 650,
+  "viewportWidth": 1350
+}
