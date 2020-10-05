@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-	  "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "test": "cypress run -b chrome",
+    "test:firefox": "cypress run -b firefox"
   },
   "author": "Illia Smolin",
   "license": "ISC",
