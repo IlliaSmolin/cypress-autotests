@@ -3,5 +3,6 @@
   "integrationFolder": "tests",
   "testFiles": "*.test.js",
   "viewportHeight": 650,
-  "viewportWidth": 1350
+  "viewportWidth": 1350,
+  "defaultCommandTimeout": 10000
 }
