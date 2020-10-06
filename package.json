@@ -7,11 +7,13 @@
     "cy:open": "cypress open",
     "test": "cypress run -b chrome",
     "test:firefox": "cypress run -b firefox",
-    "current": "cypress run -b chrome -s \"tests\\dropdown.test.js\""
+    "current": "cypress run -b chrome -s \"tests\\dropdown.test.js\"",
+    "prettier": "prettier . -w"
   },
   "author": "Illia Smolin",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^5.3.0"
+    "cypress": "^5.3.0",
+    "prettier": "^2.1.2"
   }
 }
