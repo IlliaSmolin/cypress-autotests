@@ -4,4 +4,8 @@ module.exports = function () {
   beforeEach(function () {
     inputsPage.openUrl();
   });
+  it("Verify header's text", function () {
+    const expectedHeader = "Inputs";
+    inputsPage.verifyHeaderText(expectedHeader);
+  });
 }
