@@ -9,6 +9,10 @@ class DropdownPage extends Global {
   get dropdown() {
     return cy.get("#dropdown");
   }
+
+  selectDropdownOption(indexOrText) {
+    this.dropdown.select(indexOrText + "");
+  }
 }
 
 module.exports = new DropdownPage();
