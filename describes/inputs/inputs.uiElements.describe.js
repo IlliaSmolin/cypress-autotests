@@ -8,4 +8,7 @@ module.exports = function () {
     const expectedHeader = "Inputs";
     inputsPage.verifyHeaderText(expectedHeader);
   });
+  it("Verify input's presence", function () {
+    inputsPage.verifyInputDisplay();
+  });
 }

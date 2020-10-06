@@ -13,9 +13,15 @@ class InputsPage extends Global {
   get header() {
     return cy.get("h3");
   }
+  get input() {
+    return cy.get("input");
+  }
 
   verifyHeaderText(text) {
     super.verifyText(this.header, text);
+  }
+  verifyInputDisplay() {
+    super.verifyDisplay(this.input);
   }
 }
 
