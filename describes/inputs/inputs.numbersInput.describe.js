@@ -12,4 +12,9 @@ module.exports = function () {
     inputsPage.fillInput(digits);
     inputsPage.verifyInputValue(digits);
   });
+  it("Verify that symbols cannot be typed into the field", function () {
+    const symbols = "qQwWeErRtTyYuUiIoOpPaAsSdDfFgGhHjJkKlLzZxXcCvVbBnNmM,<.>/?[{]}\\|;:'\"`~!@#$%^&*()-_=+";
+    inputsPage.fillInput(symbols);
+    inputsPage.verifyInputValue("");
+  });
 }
