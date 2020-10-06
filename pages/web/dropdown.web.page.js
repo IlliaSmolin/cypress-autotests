@@ -13,6 +13,10 @@ class DropdownPage extends Global {
   selectDropdownOption(indexOrText) {
     this.dropdown.select(indexOrText + "");
   }
+
+  verifySelectedOption(index) {
+    cy.get(`option:nth-child(${index})`).should("be.selected");
+  }
 }
 
 module.exports = new DropdownPage();
