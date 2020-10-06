@@ -15,6 +15,9 @@ class Global {
   verifySelection(element) {
     element.should('be.selected');
   }
+  verifyDisability(element) {
+    element.should('be.disabled');
+  }
 }
 
 module.exports = Global;

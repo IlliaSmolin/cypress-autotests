@@ -20,6 +20,10 @@ class DropdownPage extends Global {
   verifySelectedOption(index) {
     super.verifySelection(this.dropdownOption(index));
   }
+
+  verifyOptionDisabled(index) {
+    super.verifyDisability(this.dropdownOption(index));
+  }
 }
 
 module.exports = new DropdownPage();
