@@ -1,5 +1,8 @@
-class InputsPage {
+const Global = require("../global.page");
+
+class InputsPage extends Global {
   constructor() {
+    super();
     this.url = "/inputs";
   }
 
@@ -12,7 +15,7 @@ class InputsPage {
   }
 
   verifyHeaderText(text) {
-    return this.header.should('have.text', text);
+    super.verifyText(this.header, text);
   }
 }
 
