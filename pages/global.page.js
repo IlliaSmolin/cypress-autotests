@@ -5,6 +5,9 @@ class Global {
   verifyDisplay(element) {
     element.should('be.visible');
   }
+  verifyValue(element, value) {
+    element.should('have.value', value);
+  }
 }
 
 module.exports = Global;
