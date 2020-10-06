@@ -6,10 +6,6 @@ class InputsPage extends Global {
     this.url = "/inputs";
   }
 
-  openUrl() {
-    cy.visit(this.url);
-  }
-
   get header() {
     return cy.get("h3");
   }

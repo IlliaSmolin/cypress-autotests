@@ -1,4 +1,8 @@
 class Global {
+  openUrl() {
+    cy.visit(this.url);
+  }
+
   verifyText(element, text) {
     element.should('have.text', text);
   }
