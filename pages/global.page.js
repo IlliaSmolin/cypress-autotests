@@ -4,19 +4,19 @@ class Global {
   }
 
   verifyText(element, text) {
-    element.should('have.text', text);
+    element.should("have.text", text);
   }
   verifyValue(element, value) {
-    element.should('have.value', value);
+    element.should("have.value", value);
   }
   verifyDisplay(element) {
-    element.should('be.visible');
+    element.should("be.visible");
   }
   verifySelection(element) {
-    element.should('be.selected');
+    element.should("be.selected");
   }
   verifyDisability(element) {
-    element.should('be.disabled');
+    element.should("be.disabled");
   }
 }
 

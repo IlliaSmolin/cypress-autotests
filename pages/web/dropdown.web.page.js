@@ -10,7 +10,7 @@ class DropdownPage extends Global {
     return cy.get("#dropdown");
   }
   dropdownOption(index) {
-    return cy.get(`option:nth-child(${index})`)
+    return cy.get(`option:nth-child(${index})`);
   }
 
   selectDropdownOption(indexOrText) {

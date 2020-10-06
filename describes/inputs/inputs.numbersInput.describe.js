@@ -13,8 +13,9 @@ module.exports = function () {
     inputsPage.verifyInputValue(digits);
   });
   it("Verify that symbols cannot be typed into the field", function () {
-    const symbols = "qQwWeErRtTyYuUiIoOpPaAsSdDfFgGhHjJkKlLzZxXcCvVbBnNmM,<.>/?[{]}\\|;:'\"`~!@#$%^&*()-_=+";
+    const symbols =
+      "qQwWeErRtTyYuUiIoOpPaAsSdDfFgGhHjJkKlLzZxXcCvVbBnNmM,<.>/?[{]}\\|;:'\"`~!@#$%^&*()-_=+";
     inputsPage.fillInput(symbols);
     inputsPage.verifyInputValue("");
   });
-}
+};

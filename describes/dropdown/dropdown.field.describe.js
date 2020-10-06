@@ -14,4 +14,4 @@ module.exports = function () {
     dropdownPage.selectDropdownOption(1);
     dropdownPage.verifySelectedOption(2);
   });
-}
+};
