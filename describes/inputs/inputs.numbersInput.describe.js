@@ -7,4 +7,9 @@ module.exports = function () {
   it("Verify that input is empty by default", function () {
     inputsPage.verifyInputValue("");
   });
+  it("Verify that numbers can be typed into the field", function () {
+    const digits = "127";
+    inputsPage.fillInput(digits);
+    inputsPage.verifyInputValue(digits);
+  });
 }

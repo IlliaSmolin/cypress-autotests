@@ -26,6 +26,10 @@ class InputsPage extends Global {
   verifyInputValue(value) {
     super.verifyValue(this.input, value);
   }
+
+  fillInput(text) {
+    this.input.type(text);
+  }
 }
 
 module.exports = new InputsPage();
