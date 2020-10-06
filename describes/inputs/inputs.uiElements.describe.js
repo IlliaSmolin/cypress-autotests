@@ -1,7 +1,7 @@
 const inputsPage = require("../../pages/web/inputs.web.page");
 
 module.exports = function () {
-  beforeEach(function () {
+  before(function () {
     inputsPage.openUrl();
   });
   it("Verify header's text", function () {
