@@ -6,7 +6,8 @@
   "scripts": {
     "cy:open": "cypress open",
     "test": "cypress run -b chrome",
-    "test:firefox": "cypress run -b firefox"
+    "test:firefox": "cypress run -b firefox",
+    "current": "cypress run -b chrome -s \"tests\\dropdown.test.js\""
   },
   "author": "Illia Smolin",
   "license": "ISC",
