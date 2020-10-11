@@ -13,4 +13,9 @@ module.exports = function () {
     keyPressesPage.pressF10();
     keyPressesPage.verifyPressResult("F10");
   });
+  it("Verify that a SHIFT key can be pressed", function () {
+    const key = "{shift}";
+    keyPressesPage.keyPressInput.type(key);
+    keyPressesPage.verifyPressResult(key);
+  });
 }

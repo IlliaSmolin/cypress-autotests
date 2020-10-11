@@ -14,7 +14,11 @@ class KeyPressPage extends Global {
   }
 
   verifyPressResult(key) {
-    super.verifyText(this.pressResult, `You entered: ${key.toUpperCase()}`);
+    const corrKey = key
+      .replace(/{/, "")
+      .replace(/}/, "")
+      .toUpperCase();
+    super.verifyText(this.pressResult, `You entered: ${corrKey}`);
   }
   pressF10() {
     //121 = F10
