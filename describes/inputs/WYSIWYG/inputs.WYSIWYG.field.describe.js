@@ -7,4 +7,8 @@ module.exports = function () {
   it("Verify the initial input's value", function () {
     WYSIWYGpage.verifyEditorText("Your content goes here.");
   });
+  it("Verify that the text editor can be cleared", function () {
+    WYSIWYGpage.clearEditorText();
+    WYSIWYGpage.verifyEditorText("");
+  });
 }

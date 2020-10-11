@@ -19,6 +19,10 @@ class WYSIWYGPage extends Global {
   verifyEditorText(text) {
     super.verifyText(this.textEditor, text);
   }
+  
+  clearEditorText() {
+    this.textEditor.clear();
+  }
 }
 
 module.exports = new WYSIWYGPage();
