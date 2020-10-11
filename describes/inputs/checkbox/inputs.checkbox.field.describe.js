@@ -14,4 +14,9 @@ module.exports = function () {
     checkboxPage.checkCheckbox(1);
     checkboxPage.verifyCheckboxChecked(1);
   });
+  it("Verify that a checkbox can be unchecked", function () {
+    checkboxPage.checkCheckbox(1);
+    checkboxPage.uncheckCheckbox(1);
+    checkboxPage.verifyCheckboxNotChecked(1);
+  });
 }
