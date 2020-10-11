@@ -7,7 +7,7 @@
     "cy:open": "cypress open",
     "test": "cypress run -b chrome",
     "test:firefox": "cypress run -b firefox",
-    "current": "cypress run -b chrome -s \"tests\\inputs.test.js\"",
+    "current": "cypress run -b chrome -s \"tests\\popUp.test.js\"",
     "prettier": "prettier . -w"
   },
   "author": "Illia Smolin",
