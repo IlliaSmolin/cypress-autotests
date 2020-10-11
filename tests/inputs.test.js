@@ -19,7 +19,7 @@ describe("Inputs", function () {
   describe("'WYSIWYG' page", function () {
     describe("'WYSIWYG' editor", WYSIWYGField);
   });
-  describe.only("Key presses", function () {
+  describe("Key presses", function () {
     describe("Key detection input", keyPressInput);
   });
 });
