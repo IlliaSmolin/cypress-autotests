@@ -3,6 +3,7 @@ const numberField = require("../describes/inputs/number/inputs.number.field.desc
 const dropdownField = require("../describes/inputs/dropdown/inputs.dropdown.field.describe");
 const checkboxField = require("../describes/inputs/checkbox/inputs.checkbox.field.describe");
 const WYSIWYGField = require("../describes/inputs/WYSIWYG/inputs.WYSIWYG.field.describe");
+const keyPressInput = require("../describes/inputs/keysPresses/inputs.keyPress.field.describe");
 
 describe("Inputs", function () {
   describe("'Inputs' page (number type input)", function () {
@@ -15,7 +16,10 @@ describe("Inputs", function () {
   describe("'Checkboxes' page", function () {
     describe("Checkboxes field", checkboxField);
   });
-  describe.only("'WYSIWYG' page", function () {
+  describe("'WYSIWYG' page", function () {
     describe("'WYSIWYG' editor", WYSIWYGField);
+  });
+  describe.only("Key presses", function () {
+    describe("Key detection input", keyPressInput);
   });
 });
