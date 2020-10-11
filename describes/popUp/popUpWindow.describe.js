@@ -20,4 +20,8 @@ module.exports = function () {
   it("Verify that pop-up doesn't appear after it was closed", function () {
     popUpPage.verifyPopUpAbsence();
   });
+  it("Verify that pop-up appears after it was restarted [before refresh]", function () {
+    popUpPage.restartPopUp();
+    popUpPage.verifyPopUpPresence();
+  });
 }
