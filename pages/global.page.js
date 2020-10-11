@@ -12,6 +12,9 @@ class Global {
   verifyDisplay(element) {
     element.should("be.visible");
   }
+  verifyAbsence(element) {
+    element.should("not.be.visible");
+  }
   verifySelection(element) {
     element.should("be.selected");
   }

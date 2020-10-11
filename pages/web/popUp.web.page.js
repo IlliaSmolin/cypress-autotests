@@ -13,7 +13,7 @@ class PopUpWindowPage extends Global {
     return this.popUp.get(".modal-footer");
   }
   get closePopUpBtn() {
-    return this.popUpFooter.get("p");
+    return this.popUpFooter.find("p");
   }
   get restartPopUpBtn() {
     return cy.get("#restart-ad");
@@ -28,6 +28,10 @@ class PopUpWindowPage extends Global {
 
   verifyPopUpPresence() {
     super.verifyDisplay(this.popUp);
+  }
+
+  verifyPopUpAbsence() {
+    super.verifyAbsence(this.popUp);
   }
 }
 
