@@ -16,6 +16,10 @@ class KeyPressPage extends Global {
   verifyPressResult(key) {
     super.verifyText(this.pressResult, `You entered: ${key.toUpperCase()}`);
   }
+  pressF10() {
+    //121 = F10
+    this.keyPressInput.trigger('keydown', { keyCode: 121, which: 121 });
+  }
 }
 
 module.exports = new KeyPressPage();

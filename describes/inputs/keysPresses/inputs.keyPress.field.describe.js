@@ -9,4 +9,8 @@ module.exports = function () {
     keyPressesPage.keyPressInput.type(key);
     keyPressesPage.verifyPressResult(key);
   });
+  it("Verify that a F-type key can be pressed", function () {
+    keyPressesPage.pressF10();
+    keyPressesPage.verifyPressResult("F10");
+  });
 }
