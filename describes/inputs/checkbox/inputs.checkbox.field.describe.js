@@ -10,4 +10,8 @@ module.exports = function () {
   it("Verify that second checkbox is checked by default", function () {
     checkboxPage.verifyCheckboxChecked(2);
   });
+  it("Verify that a checkbox can be checked", function () {
+    checkboxPage.checkCheckbox(1);
+    checkboxPage.verifyCheckboxChecked(1);
+  });
 }

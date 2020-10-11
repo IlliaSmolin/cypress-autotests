@@ -21,6 +21,14 @@ class Checkbox extends Global {
   verifyCheckboxNotChecked(index) {
     this.getCheckbox(index).should('not.be.checked');
   }
+
+  checkCheckbox(index) {
+    this.getCheckbox(index).check();
+  }
+
+  uncheckCheckbox(index) {
+    this.getCheckbox(index).uncheck();
+  }
 }
 
 module.exports = new Checkbox();
