@@ -11,4 +11,9 @@ module.exports = function () {
     WYSIWYGpage.clearEditorText();
     WYSIWYGpage.verifyEditorText("");
   });
+  it("Verify that a text can be typed into the text editor", function () {
+    const text = "some text!%!^1";
+    WYSIWYGpage.fillTextEditor(text);
+    WYSIWYGpage.verifyEditorText(text);
+  });
 }

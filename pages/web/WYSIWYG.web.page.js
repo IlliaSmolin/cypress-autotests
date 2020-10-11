@@ -23,6 +23,11 @@ class WYSIWYGPage extends Global {
   clearEditorText() {
     this.textEditor.clear();
   }
+
+  fillTextEditor(text) {
+    this.clearEditorText();
+    this.textEditor.type(text);
+  }
 }
 
 module.exports = new WYSIWYGPage();
