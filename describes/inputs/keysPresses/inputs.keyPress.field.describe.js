@@ -18,4 +18,9 @@ module.exports = function () {
     keyPressesPage.keyPressInput.type(key);
     keyPressesPage.verifyPressResult(key);
   });
+  it("Verify that an arrow key can be pressed", function () {
+    const key = "left"
+    keyPressesPage.keyPressInput.type(`{${key}arrow}`);
+    keyPressesPage.verifyPressResult("left");
+  });
 }
