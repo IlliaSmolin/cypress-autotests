@@ -5,6 +5,10 @@ class PopUpWindowPage extends Global {
     super();
     this.url = "/entry_ad";
   }
+  openUrl() {
+    cy.visit(this.url);
+    cy.wait(4000);
+  }
 
   get popUp() {
     return cy.get(".modal");
