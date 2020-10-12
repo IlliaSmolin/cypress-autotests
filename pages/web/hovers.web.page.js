@@ -33,7 +33,7 @@ class HoversPageWeb extends Global {
     https://github.com/cypress-io/cypress/issues/2922
 
     so the workaround is used instead*/
-    
+
     this.showCaption(index);
   }
   showCaption(index) {

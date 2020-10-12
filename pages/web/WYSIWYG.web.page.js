@@ -10,8 +10,8 @@ class WYSIWYGPage extends Global {
     return cy.get("iframe");
   }
   get textEditor() {
-    return this.iframe.then($element => {
-      const $body = $element.contents().find('body');
+    return this.iframe.then(($element) => {
+      const $body = $element.contents().find("body");
       return cy.wrap($body);
     });
   }
@@ -19,7 +19,7 @@ class WYSIWYGPage extends Global {
   verifyEditorText(text) {
     super.verifyText(this.textEditor, text);
   }
-  
+
   clearEditorText() {
     this.textEditor.clear();
   }

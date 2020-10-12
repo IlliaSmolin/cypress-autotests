@@ -19,4 +19,4 @@ module.exports = function () {
     checkboxPage.uncheckCheckbox(1);
     checkboxPage.verifyCheckboxNotChecked(1);
   });
-}
+};

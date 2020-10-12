@@ -11,4 +11,4 @@ module.exports = function () {
     hoversPage.focusAvatar(1);
     hoversPage.verifyCaptionPresence(1);
   });
-}
+};

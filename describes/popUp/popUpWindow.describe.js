@@ -6,7 +6,7 @@ module.exports = function () {
     Cypress.Cookies.defaults({
       preserve: (cookie) => {
         return true;
-      }
+      },
     });
     popUpPage.openUrl();
   });
@@ -27,4 +27,4 @@ module.exports = function () {
   it("Verify that pop-up appears after it was restarted [after refresh]", function () {
     popUpPage.verifyPopUpPresence();
   });
-}
+};

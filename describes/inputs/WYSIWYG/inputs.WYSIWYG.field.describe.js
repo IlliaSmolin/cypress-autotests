@@ -16,4 +16,4 @@ module.exports = function () {
     WYSIWYGpage.fillTextEditor(text);
     WYSIWYGpage.verifyEditorText(text);
   });
-}
+};

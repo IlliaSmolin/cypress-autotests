@@ -14,15 +14,12 @@ class KeyPressPage extends Global {
   }
 
   verifyPressResult(key) {
-    const corrKey = key
-      .replace(/{/, "")
-      .replace(/}/, "")
-      .toUpperCase();
+    const corrKey = key.replace(/{/, "").replace(/}/, "").toUpperCase();
     super.verifyText(this.pressResult, `You entered: ${corrKey}`);
   }
   pressF10() {
     //121 = F10
-    this.keyPressInput.trigger('keydown', { keyCode: 121, which: 121 });
+    this.keyPressInput.trigger("keydown", { keyCode: 121, which: 121 });
   }
 }
 

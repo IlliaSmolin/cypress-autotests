@@ -11,15 +11,17 @@ class Checkbox extends Global {
   }
 
   getCheckbox(index) {
-    return this.checkboxes.get(`input:nth-child(${index > 1 ? (index * 2) - 1 : index})`);
+    return this.checkboxes.get(
+      `input:nth-child(${index > 1 ? index * 2 - 1 : index})`
+    );
   }
 
   verifyCheckboxChecked(index) {
-    this.getCheckbox(index).should('be.checked');
+    this.getCheckbox(index).should("be.checked");
   }
 
   verifyCheckboxNotChecked(index) {
-    this.getCheckbox(index).should('not.be.checked');
+    this.getCheckbox(index).should("not.be.checked");
   }
 
   checkCheckbox(index) {
