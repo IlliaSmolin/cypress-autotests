@@ -24,4 +24,7 @@ module.exports = function () {
     popUpPage.restartPopUp();
     popUpPage.verifyPopUpPresence();
   });
+  it("Verify that pop-up appears after it was restarted [after refresh]", function () {
+    popUpPage.verifyPopUpPresence();
+  });
 }
