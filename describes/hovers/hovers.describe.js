@@ -5,6 +5,10 @@ module.exports = function () {
     hoversPage.openUrl();
   });
   it("Verify that caption text is absent by default", function () {
-    hoversPage.verifyAbsence(hoversPage.getCaption(1));
+    hoversPage.verifyCaptionAbsence(1);
+  });
+  it("Verify that caption text is present after avatar is focused", function () {
+    hoversPage.focusAvatar(1);
+    hoversPage.verifyCaptionPresence(1);
   });
 }

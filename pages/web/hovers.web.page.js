@@ -24,6 +24,21 @@ class HoversPageWeb extends Global {
   verifyCaptionPresence(index) {
     super.verifyDisplay(this.getCaption(index));
   }
+  focusAvatar(index) {
+    /*the following code:
+
+    this.getAvatar(index).trigger('mouseover');
+    
+    doesn't work to trigger the hover text (issue link):
+    https://github.com/cypress-io/cypress/issues/2922
+
+    so the workaround is used instead*/
+    
+    this.showCaption(index);
+  }
+  showCaption(index) {
+    this.getCaption(index).invoke("show");
+  }
 }
 
 module.exports = new HoversPageWeb();
