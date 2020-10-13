@@ -4,11 +4,10 @@ class PopUpWindowPage extends Global {
   constructor() {
     super();
     this.url = "/entry_ad";
-    this.timeout = 3000;
   }
   openUrl() {
+    cy.server();
     super.openUrl();
-    cy.wait(this.timeout);
   }
 
   get popUp() {
@@ -25,12 +24,14 @@ class PopUpWindowPage extends Global {
   }
 
   closePopUp() {
+    cy.route("POST", "/entry_ad").as("postRequest");
     this.closePopUpBtn.click();
-    cy.wait(this.timeout);
+    cy.wait("@postRequest");
   }
   restartPopUp() {
+    cy.route("POST", "/entry_ad").as("postRequest");
     this.restartPopUpBtn.click();
-    cy.wait(this.timeout);
+    cy.wait("@postRequest");
   }
 
   verifyPopUpPresence() {
