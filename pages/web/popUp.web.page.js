@@ -7,6 +7,7 @@ class PopUpWindowPage extends Global {
   }
   openUrl() {
     cy.server();
+    cy.route("POST", "/entry_ad").as("postRequest");
     super.openUrl();
   }
 
@@ -24,14 +25,12 @@ class PopUpWindowPage extends Global {
   }
 
   closePopUp() {
-    cy.route("POST", "/entry_ad").as("postRequest");
     this.closePopUpBtn.click();
-    cy.wait("@postRequest");
+    this.waitForPostResponse();
   }
   restartPopUp() {
-    cy.route("POST", "/entry_ad").as("postRequest");
     this.restartPopUpBtn.click();
-    cy.wait("@postRequest");
+    this.waitForPostResponse();
   }
 
   verifyPopUpPresence() {
@@ -40,6 +39,10 @@ class PopUpWindowPage extends Global {
 
   verifyPopUpAbsence() {
     super.verifyAbsence(this.popUp);
+  }
+
+  waitForPostResponse() {
+    cy.wait("@postRequest");
   }
 }
 
