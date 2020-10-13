@@ -7,7 +7,7 @@ class PopUpWindowPage extends Global {
     this.timeout = 3000;
   }
   openUrl() {
-    cy.visit(this.url);
+    super.openUrl();
     cy.wait(this.timeout);
   }
 
